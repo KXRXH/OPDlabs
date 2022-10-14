@@ -1,9 +1,11 @@
-#!/bin/bash
-# 120823
+#!/usr/bin/env bash
+
+# V: 120823
+
 # Creating lab0 folder
-mkdir lab0 && cd lab0
+mkdir lab0 && cd lab0 || exit
 # Creating "combee3" folder and files in it
-mkdir combee3 && cd combee3
+mkdir combee3 && cd combee3 || exit
 mkdir swalot
 touch beartic
 touch salamence
@@ -11,14 +13,14 @@ touch ponyta && cd ..
 # Creating two files in root dict
 touch golett6 && touch haunter7
 # Creating "karrablast4" folder and files in it
-mkdir karrablast4 && cd karrablast4
+mkdir karrablast4 && cd karrablast4 || exit
 touch dusknoir
 mkdir tympole
 touch petilil
 mkdir venipede
 touch ariados && cd ..
 # creating files
-mkdir sneasel6 && cd sneasel6
+mkdir sneasel6 && cd sneasel6 || exit
 touch vanillite
 touch finneon
 mkdir nincada
@@ -27,7 +29,7 @@ touch tangrowth
 touch larvesta && cd ..
 touch tentacool8
 # filling files in "combee3"
-cd combee3
+cd combee3 || exit
 echo "satk=7 sdef=8 spd=5" >beartic
 cat >salamence <<E
 weigth=226.2 height=59.0
@@ -47,7 +49,7 @@ weigth=0.2 height=63.0 atk=5
 def=5
 E
 # Filling files in "karrablast4" folder
-cd karrablast4
+cd karrablast4 || exit
 echo "satk=7 sdef=14 spd=5" >dusknoir
 cat >petilil <<E
 Возможности Overland=6
@@ -59,7 +61,7 @@ Forest Rainforest Cave
 E
 cd ..
 # Filling files in "sneasel6" folder
-cd sneasel6
+cd sneasel6 || exit
 cat >vanillite <<E
 Способности Freezing Point Ice Body
 Snow Cloak
@@ -82,14 +84,3 @@ cat >tentacool8 <<E
 Возможности Overland=1 Surface=8 Underwater=8
 Jump2 Power=2 Intelligence=3 Gilled=0
 E
-# Setting up permissions
-chmod 733 combee3 # rwx-wx-wx
-cd combee3
-chmod a+wrx,u-w swalot # r-xrwxrwx
-chmod 006 beartic # -------rw- 
-chmod 004 salamence # ------r--
-chmod a+r,a-w ponyta # r--r--r--
-cd ..
-chmod 622 golett6 # -rw--w--w-
-chmod 400 haunter7 # -r--------
-chmod a+rwx karrablast4 # rwxrwxrwx
