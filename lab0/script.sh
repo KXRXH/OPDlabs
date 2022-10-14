@@ -82,3 +82,14 @@ cat >tentacool8 <<E
 Возможности Overland=1 Surface=8 Underwater=8
 Jump2 Power=2 Intelligence=3 Gilled=0
 E
+# Setting up permissions
+chmod 733 combee3 # rwx-wx-wx
+cd combee3
+chmod a+wrx,u-w swalot # r-xrwxrwx
+chmod 006 beartic # -------rw- 
+chmod 004 salamence # ------r--
+chmod a+r,a-w ponyta # r--r--r--
+cd ..
+chmod 622 golett6 # -rw--w--w-
+chmod 400 haunter7 # -r--------
+chmod a+rwx karrablast4 # rwxrwxrwx
