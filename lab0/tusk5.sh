@@ -15,8 +15,8 @@ rm Copy_*
 rm ./combee3/beartictentaco*
 
 # Удалить директорию sneasel6
-# chmod 777 sneasel6 # rm: cannot remove 'sneasel6': Permission denied
-# rm -rf sneasel6
+chmod 777 sneasel6 # rm: cannot remove 'sneasel6': Permission denied
+rm -rf sneasel6
 
 # Удалить директорию lab0/combee3/swalot
 rmdir ./combee3/swalot
