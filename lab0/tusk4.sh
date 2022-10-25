@@ -28,9 +28,9 @@ cat -n tangrowth | grep "[^h]$"
 cd .. # back to lab0
 # 4'th tusk
 echo "Tusk 4:"
-ls -lR 2>/tmp/tusk4err | grep "[6]$" | sort -k 9 -r | tail -n 2
-# 5'th tusk
+ls -lR 2>/tmp/tusk4err | grep "[6]$" | sort -k 9  | tail -n 2
 echo "Tusk 5:"
+# 5'th tusk
 ls -lR 2>/tmp/tusk4err | grep -v "^\." | grep "le" | sort -k 2 -r
 # 6'th tusk
 echo "Tusk 6:"
