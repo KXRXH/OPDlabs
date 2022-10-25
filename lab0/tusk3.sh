@@ -6,6 +6,7 @@ ln -s $(pwd)/karrablast4 Copy_18
 # OK!
 
 # Объеденить содержимое файлов lab0/combee3/beartic, lab0/sneasel6/tangrowth, в новый файл lab0/haunter7_91
+chmod u+r ./combee3/beartic
 cat ./combee3/beartic ./sneasel6/tangrowth >>haunter7_91
 # cat: ./combee3/beartic: Permission denied, because of -------rw-
 
@@ -14,6 +15,7 @@ ln -s $(pwd)/haunter7 ./sneasel6/larvestahaunter
 # OK!
 
 # Скопировать файл tentacool8 в директорию lab0/sneasel6/lombre
+chmod u+w ./sneasel6/lombre
 cp tentacool8 ./sneasel6/lombre
 # cp: cannot create regular file './sneasel6/lombre/tentacool8': Permission denied , because of no 'w' for user
 
@@ -22,6 +24,7 @@ ln $(pwd)/tentacool8 ./combee3/beartictentacool
 # OK!
 
 # Скопировать рекурсивно директорию karrablast4 в директорию lab0/karrablast4/tympole
+chmod u+r ./karrablast4/*
 cp -r karrablast4 ./karrablast4/tympole
 # cp: cannot access 'karrablast4/tympole': Permission denied
 # cp: cannot open 'karrablast4/petilil' for reading: Permission denied
