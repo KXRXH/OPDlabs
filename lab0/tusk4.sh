@@ -9,7 +9,7 @@ wc -m ./* 2>/dev/null | sort -n
 # 2'd tusk
 echo "Tusk 2:"
 cd ..
-ls -lR | sort -u -k 1 -nr | grep -v '^t\|^$' | head -n 4
+ls -lR | grep -v '^t\|^$\|^\.' | sort -k 2 -r | head -n 4
 # 3'd tusk
 echo "Tusk 3:"
 cd combee3 || exit
@@ -28,10 +28,10 @@ cat -n tangrowth | grep "[^h]$"
 cd .. # back to lab0
 # 4'th tusk
 echo "Tusk 4:"
-ls -lR 2>/tmp/tusk4err | grep "[6]$" | sort -k 8 | tail -n 2
+ls -lR 2>/tmp/tusk4err | grep "[6]$" | sort -k 9 | tail -n 2
 # 5'th tusk
 echo "Tusk 5:"
-ls -lR 2>/tmp/tusk4err | grep -v "^\." | grep "le" | sort -k 1
+ls -lR 2>/tmp/tusk4err | grep -v "^\." | grep "le" | sort -k 2
 # 6'th tusk
 echo "Tusk 6:"
 cat -n karrablast4/* 2>/dev/null | grep "[h]$"
