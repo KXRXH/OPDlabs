@@ -28,10 +28,10 @@ cat -n tangrowth | grep "[^h]$"
 cd .. # back to lab0
 # 4'th tusk
 echo "Tusk 4:"
-ls -lR 2>/tmp/tusk4err | grep "[6]$" | sort -k 9 | tail -n 2
+ls -lR 2>/tmp/tusk4err | grep "[6]$" | sort -k 9 -r | tail -n 2
 # 5'th tusk
 echo "Tusk 5:"
-ls -lR 2>/tmp/tusk4err | grep -v "^\." | grep "le" | sort -k 2
+ls -lR 2>/tmp/tusk4err | grep -v "^\." | grep "le" | sort -k 2 - r
 # 6'th tusk
 echo "Tusk 6:"
 cat -n karrablast4/* 2>/dev/null | grep "[h]$"
